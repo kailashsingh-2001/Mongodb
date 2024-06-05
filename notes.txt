@@ -15,4 +15,63 @@
  // sub folder hoskta hai lekin parent folder nahi ho sakta.
  //matlab empty collection/empty array is allowed but empty databse in not allowed.
  //ki collection name/ subfolder // array of object // inka name singular nai ho skta ye hamsa pural form mai hi hota hai
- 
+ mongodb commands
+
+showdbs
+use dbs
+
+
+showcollections
+
+
+
+db.createCollection(collection name)
+db.collectionname.insertOne({})
+db.collectionmany([{},{},{}])
+db.collectionname.find()
+
+db.collectionname.drop();
+db.users.find().count() to know how many object or documents are there.
+
+db.users.find({role:'admin'})
+db.users.find({gender:"Female"})
+
+db.users.find({username:"Sumantrao"})
+
+
+db.users.find({skill:python})
+
+db.users.find({role:"customer",lastname:"verma"})
+
+//operators
+$and $or $not $ne $exist $all() $nin()
+$size(to find the length of array)
+
+Q.5Find all documents where the user's first name starts with "R".
+==>db.users.find({firstName:/^R/})
+Q6.find all the documents where username starts with p
+==>db.users.find({firstName:/^P/})
+
+Q13.Find all documents where the user has the skill "Java" but not "Python".
+==>db.users.find({skills:{$all:["Java","Python"]}})
+q14.find all documents where the user has the skill "javascript" and python?
+==>db.users.find({skills:{$all:["Javascript","Python"]}})
+Q15.find all documents where all the user skills "java","react"
+==>db.users.find({skills:{$all:["Java","React"]}})
+
+
+Q16.Retrieve all documents where the user's first name is "Aryan" or the last name is "Gupta".
+==>db.users.find({$or:[{firstName:"Aryan"},{lastName:"Gupta"}]})
+db.users.find({$or:[{city:"Kolkata"},{gender:"Female"}]})
+
+Q17.Find all documents where the user has the skill "Java" but not "Python".
+==>db.users.find({skills:"Java",skills:{$ne:"Python"}})
+Q18.Find all documents where the user has the skill "Java" but not "Python".
+==> db.users.find({$and:[{skills:"React"},{skills:{$ne:"Java"}}]})
+Q19.Retrieve all documents where the user's last name is "Sharma" and the role is "customer".
+==>db.users.find({$and})
+Q20.Find all documents where the user has exactly three skills.(aggregation pipeline)
+==> db.users.find({skills:{$size:3}})
+
+db.users.find({firstName:/^S/,role:"admin"})
+
