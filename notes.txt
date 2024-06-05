@@ -1,0 +1,18 @@
+ //javascript  mai jo object hota hai wahi maongodb mai document hota hai
+ //javascript mai jo array of object hota hai wo maongodb mai collection of document hota hai 
+//javascript mai jo key hoti hai wahi mongo db mai field or attributes hoti hai 
+ //javascript mai jo value hota hai wahi mongo db mai value hoti hai 
+ //javascript mai jo data structure hoti hai wo maongodb database banegi
+ //javascript mai jo function hoti hai wo mongo mai query hoti hai 
+ //file system mai jo parent folder name hai wo maongodb ke terms mai database.
+ //parent folder ke andar jo subfolders hongi wo maongodb ke terms mai collections.
+ //subfolders ke andar jo files name hota hai wo maongodb ke terms mai field name hota hai/
+ //file system mai jo data hota hai wo maongodb ke terms mai value hota hai
+ //file system mai jo function hoti wo maongodb mai query hoti hai
+ //jab me database mai ek naya database banta hai to wo kuch empty parent  folder jaise hota hai
+ // empty folder maongodb me allowed nai hota hai that means empty database  is not allowed in maongodb
+ // iska matlab kam se kam ek collection/subfolders /emty array hona chahiye.
+ // sub folder hoskta hai lekin parent folder nahi ho sakta.
+ //matlab empty collection/empty array is allowed but empty databse in not allowed.
+ //ki collection name/ subfolder // array of object // inka name singular nai ho skta ye hamsa pural form mai hi hota hai
+ 
