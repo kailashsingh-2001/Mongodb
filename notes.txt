@@ -47,6 +47,12 @@ db.users.find({role:"customer",lastname:"verma"})
 $and $or $not $ne $exist $all() $nin()
 $size(to find the length of array)
 
+$exist feild hume tab use mai leni hoti hai jab yeh clear na ho ki sarein mai same field of information hai .
+kyuki mongodb schema flexible hota hai to usme yeh jaruri nahi hai 2 object mai same field of information ho.
+matlab agar ek object mai sirf name, email, phome number hai to mognodb use bhi valid object consider karti hai and agar no field of information ho to bhi use valid
+consider kargei
+then at that moment bohut asri data hone ke karan yeh samjh pana possible nahi hota hai ki sarein ohhect mai same field of information hai ya nahi to iske liye exists ka use karte hai 
+
 Q.5Find all documents where the user's first name starts with "R".
 ==>db.users.find({firstName:/^R/})
 Q6.find all the documents where username starts with p
