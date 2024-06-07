@@ -1,0 +1,36 @@
+//for all the filter queris we use to do find method 
+//find method pure document use hota hai 
+//iska matlab hai ki each and every document apne apne
+ mai seperte document hai un documents mai jho be chize 
+ keys :value pair particular condition ko match kar rahi 
+ hai un sbi documents ko filter karke lane ka kam find
+  method karti hai .
+  //
+
+  chapter 2: aggreagation pipeline
+  group karenge documents ka fir unme kuch find karne wale hai
+  pipeline ek ke baad dusra
+
+
+ 
+  mognodb is having object with itself which makes all the documents 
+  unique/it has no such problem of primary key , secondary key , candidate key,
+  mongodb is scalable=>how ?.
+  =>it stores data either of the two methods one is vertical
+  method.and other one is horizontal method.
+
+  vertical scalable=>system design me ek part hoti hai scaling
+  sharding=> two concepts horizontal  vertical.
+  horizontal we divide the physical memory into multiple sub memories
+  vertical we try to increase the physical memory.
+
+
+   aggreagation pipeline operators;
+
+  $match== find
+  $group ==> jab hume documents ki grouping karni hogi.
+  $projection==>jab humne limited keys dikhani ho
+  $unwind ==>to break array.
+
+
+  //female:red
