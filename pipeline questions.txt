@@ -1,11 +1,136 @@
-Find all female users from Jaipur who know Python.
-==>
-Find all male users in Delhi who are above age 26
-Find all users who are from either New Delhi or Mumbai.
-Find all users who have the same last name.
-Find the count of users in each city.
-How many users are from New Delhi?
-How many Female users are from Jaipur?
-How many Male users are there in Delhi who have skills Java?
-How many users are from Hyderabad having age greater than 24 and have skill Python,C++
-How many female users are from Goa having age greater than 24 and have skill Python,C++
+1.Find all female users from Jaipur who know Python.
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      gender:"Female",
+      city:"Jaipur",
+      skills:"Python"
+    }
+  }
+]
+)
+2.Find all male users in Delhi who are above age 26
+==>db.users.aggregate([
+  {
+    $match: {
+      gender:"Male",
+      city:"New Delhi",
+      age:{$gt:26}
+      
+    }
+  }
+])
+3.Find all users who are from either New Delhi or Mumbai.
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      
+      city:{$in:["New Delhi","Mumbai"]},
+      
+    }
+  }
+]
+
+)
+4.Find all users who have the same last name.
+==>db.users.aggregate(
+    [
+        $match:{
+
+        }
+    ]
+    
+)
+5.Find the count of users in each city.
+==>db.users.aggregate(
+    
+)
+6.How many users are from New Delhi?
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      city:"New Delhi"
+    }
+  },
+  {
+    $count: 'total users from New Delhi'
+  }
+]
+    
+)
+7.How many Female users are from Jaipur?
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      gender:"Female",
+      city:"Jaipur"
+    }
+  },
+  {
+    $count: 'total users from jaipur'
+  }
+]
+    
+)
+8.How many Male users are there in Delhi who have skills Python?
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      gender:"Male",
+      city:"New Delhi",
+      skills:"Python"
+    }
+    
+  },
+  {
+    $count: "skills with Python in Delhi"
+  }
+  ]
+    
+)
+9.How many users are from Hyderabad having age greater than 24 and have skill java,C++
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      city:"Hyderabad",
+      age:{$gt:24},
+      skills:{$in:["Java","C++"]}
+      
+    }
+    
+  },
+  {
+    $count: "skills with java and c++"
+  }
+  ]
+    
+)
+10.How many female users are from Goa having age greater than 24 and have skill java, c++
+==>db.users.aggregate(
+    [
+  {
+    $match: {
+      city:"Goa",
+      age:{$gt:24},
+      skills:{$in:["Java","C++"]}
+      
+    }
+    
+  },
+  {
+    $count: "skills with java and c++"
+  }
+  ]
+    
+)
+
+//Groups
+Can be done on the basis of any key
+
+ document ko on the basis of skills, gender, city
