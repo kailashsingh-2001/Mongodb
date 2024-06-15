@@ -1,0 +1,11 @@
+Find all female users from Jaipur who know Python.
+==>
+Find all male users in Delhi who are above age 26
+Find all users who are from either New Delhi or Mumbai.
+Find all users who have the same last name.
+Find the count of users in each city.
+How many users are from New Delhi?
+How many Female users are from Jaipur?
+How many Male users are there in Delhi who have skills Java?
+How many users are from Hyderabad having age greater than 24 and have skill Python,C++
+How many female users are from Goa having age greater than 24 and have skill Python,C++

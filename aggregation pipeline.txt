@@ -32,5 +32,14 @@
   $projection==>jab humne limited keys dikhani ho
   $unwind ==>to break array.
 
+   system design:
+   1. monolithic architecture
+   2. distributve architeccture
 
-  //female:red
+    database software web app website
+      
+    database : monolithic or distributve
+    monolithic = find, vertical scaling
+    distributve= aggreagation pipeline , horizontal scaling
+            
+  
