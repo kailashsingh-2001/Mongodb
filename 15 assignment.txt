@@ -1,0 +1,81 @@
+1.How many male users are from Hyderabad who know JavaScript?
+==>[
+        {
+            $match:{
+              city:"Hyderabad",
+              gender:"Male",
+              skills:"JavaScript"
+           
+            }
+     },
+   {
+     $count: 'number of people living in Hyderabad with JavaScript skills'
+       
+   }
+    
+    ]
+2.How many female users are from New Delhi who have a salary greater than 500,000?
+==>[
+        {
+            $match:{
+              city:"New Delhi",
+              gender:"Female",
+              salary:{$gt:500000}
+            
+              
+             
+            }
+     },
+     $count:'female users are from New Delhi who have a salary greater than 500,000'
+    
+ 
+    
+    ]
+3.Find all users who have the skill "Django" and are under the age of 30
+==> [
+        {
+            $match:{
+              skills:'Django',
+              age:{$lt:30}
+           
+            }
+     }
+  
+    
+    ]
+4.Find all users from Assam who know Kotlin.
+==>[
+        {
+            $match:{
+              city:"Assam",
+              skills:'Kotlin'
+            
+            }
+     }
+  
+    
+    ]
+5.Find all users who are from either Hyderabad or Jaipur.
+==>[
+        {
+            $match:{
+              city:{$in:[" Hyderabad ","Jaipur"]}
+             
+            }
+     }
+  
+    
+    ]
+6.Find all female users from Mumbai who are under the age of 30.
+==>[
+        {
+            $match:{
+              city:"Mumbai",
+               age:{$lt:30},
+              gender:"Female"
+             
+            }
+     }
+  
+    
+    ]
