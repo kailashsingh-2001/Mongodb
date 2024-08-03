@@ -1,0 +1,97 @@
+[
+    {
+        "user":"Alice",
+        "age":25,
+        "city":"NewYork",
+        "likes":["reading","hinking","Photography"],
+        "orders":[
+            {
+                "product":"Book",
+                "quantity":3
+            },
+            {
+                "product":"camera",
+                "quantity":1
+            }
+            
+        ]
+    },
+
+    {
+        "user":"Bob",
+        "age":30,
+        "city":"LosAngels",
+        "likes":["surfing","music","cooking"],
+        "orders":[
+            {
+                "product":"surfboard",
+                "quantity":1
+            },
+            {
+                "product":"guitar",
+                "quantity":2
+            }
+            
+        ]
+    },
+    
+
+    {
+        "user":"Charlie",
+        "age":28,
+        "city":"San Francisco",
+        "likes":["running","Painting","gardening"],
+        "orders":[
+            {
+                "product":"Paints",
+                "quantity":2
+            },
+            {
+                "product":"runningshoes",
+                "quantity":1
+            }
+            
+        ]
+    },
+    
+
+    {
+        "user":"David",
+        "age":35,
+        "city":"Chicago",
+        "likes":["cooking","movies","volunteering"],
+        "orders":[
+            {
+                "product":"cookware set",
+                "quantity":1
+            },
+            {
+                "product":"DVDS",
+                "quantity":5
+            }
+            
+        ]
+    },
+    
+
+    {
+        "user":"Eve",
+        "age":27,
+        "city":"Miami",
+        "likes":["beach","swimming","traveling"],
+        "orders":[
+            {
+                "product":"Swinsuit",
+                "quantity":2
+            },
+            {
+                "product":"travelbag",
+                "quantity":1
+            }
+            
+        ]
+    }
+    
+
+
+]
